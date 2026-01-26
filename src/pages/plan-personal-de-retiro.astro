@@ -1,0 +1,163 @@
+---
+/* Main Layout */
+import Layout from "../layouts/Layout.astro";
+/* Shit necesaria para el hero del PPR */
+import Myhero from '../components/blocks/ppr/heroppr.astro'
+import heromorra from '../assets/heroprimeideappr.jpg'
+/* Import IU shits 💩*/
+import Col from     '../components/ui/Col.astro'
+import Card from    '../components/ui/cards/FeatureCard.astro'
+import Button from  '../components/ui/Button.astro'
+
+import { Icon } from 'astro-icon/components'
+
+/* Importa las imagenes de las cards. 🃏 */
+import imgProfesionista  from '/src/assets/ppr/logiempleado.jpg'
+import imgEmprendedores  from '/src/assets/ppr/logiemprendedor.jpg'
+import imgDueñosNegocios  from '/src/assets/ppr/logipyme.jpg'
+---
+
+<Layout title="PPR | Prime Idea">
+    <Myhero bg={heromorra} bgPosition="right" />
+    <section class="border-b">
+    <div class="container mx-auto px-6 py-20">
+        <!-- DOS COLUMNAS -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="justify-center text-lg text-slate-400">
+            <h3>¿Por qué es importante tener un Plan Personal de Retiro?</h3>
+            El <strong>Plan Personal de Retiro (PPR)</strong> es una herramienta que te permite ahorrar e invertir para tu retiro, con beneficios fiscales y flexibilidad para adaptarlo a tus necesidades.<br /><br /> 
+          
+            Las pensiones <strong>actuales solo garantizan el 30% de tu último sueldo</strong>, por lo que es importante complementar tu ahorro para mantener tu calidad de vida en el retiro.
+             <br /><br />
+             Con un PPR, puedes ahorrar de forma constante y disciplinada, aprovechando los beneficios de los que gozan los planes de ahorro para el retiro. <strong>Construye un futuro sin sacrificar tu estilo de vida. Nosotros te asesoramos para que puedas lograrlo.</strong>
+          </div>
+          <div class="text-lg text-slate-400">
+            <h3>Lógralo con un Plan Personal de Retiro ¡Cotiza ahora!</h3>
+            <p class="mt-4">En LogiSeguros te ayudamos a completar tu ahorro para el retiro, con un Plan Personal de Retiro que se adapta a tus necesidades y a tu estilo de vida. En <strong>Prime Idea Asesores</strong> estamos para apoyarte en cada paso del proceso.</p>
+            <ul class="mt-10 space-y-6">
+              <li class="flex items-center gap-4">
+                  <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900/30">
+                      <Icon name="microphone" class="size-6 text-blue-600 dark:text-blue-400" />
+                  </div>
+                  <span class="text-slate-400">
+                      Atención y Asesoría Personalizada
+                  </span>
+              </li>
+              <li class="flex items-center gap-4">
+                  <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900/30">
+                      <Icon name="cursor-arrow-ripple" class="size-6 text-blue-600 dark:text-blue-400" />
+                  </div>
+                  <span class="text-slate-400">
+                      Contratación en Línea
+                  </span>
+              </li>
+              <li class="flex items-center gap-4">
+                  <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900/30">
+                      <Icon name="user-group" class="size-6 text-blue-600 dark:text-blue-400" />
+                  </div>
+                  <span class="text-slate-400">
+                      Acompañamiento Profesional
+                  </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+    </div>
+    </section>
+
+  <!-- 3️⃣ BARRA HORIZONTAL -->
+  <section>
+    <div class="container mx-auto px-6 py-12">
+      <div class="flex items-center justify-center text-sm text-slate-400">
+        BARRA
+      </div>
+    </div>
+  </section>
+
+  <!-- 4️⃣ TRES COLUMNAS -->
+  <section>
+    <div class="container mx-auto px-6 py-20">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="h-64 flex items-center justify-center text-sm text-slate-400">
+          <Col span="4" classes="flex flex-col gap-4">
+            <Card
+            title    ="Plan de Retiro Para Profesionistas"
+            subtitle ="Estabilidad + beneficios fiscales óptimos y sin grandes sacrificios."
+            image    ={imgProfesionista}
+            />
+            <Button link="/agenda-tu-cita" style="primary" classes="w-full sm:w-auto h-auto py-3">
+             <Icon name="clipboard-document-list" class="size-8" />
+               <span class="text-center">
+                Agenda una sesión sin compromiso <br> para tu plan como Profesionista
+               </span>
+            </Button>
+          </Col>
+        </div>
+        <div class="h-64 flex items-center justify-center text-sm text-slate-400">
+           <Col span="4" classes="flex flex-col gap-4">
+            <Card
+				     title="Plan de Retiro Para Emprendedores"
+				     subtitle="Flexibilidad y protección ante ingresos variables y asesoría personalizada para el mejor plan de retiro personal."
+             image={imgEmprendedores}
+			      />
+            <Button link="/agenda-tu-cita" style="primary" classes="w-full sm:w-auto h-auto py-3">
+              <Icon name="clipboard-document-list" class="size-8" />
+              <span class="text-center">
+               Sesión Exclusiva Emprendedores<br> agenda sin compromiso
+              </span>
+            </Button>
+           </Col>
+        </div>
+        <div class="border rounded-md h-64 flex items-center justify-center text-sm text-slate-400">
+          <Col span="4" classes="flex flex-col gap-4">
+            <Card
+				      title="Plan de Retiro Para Dueños de Negocios"
+				      subtitle="Protección y máximo provecho fiscal y legal, te asesoramos a construir tu futuro sin sacrificios"
+              image={imgDueñosNegocios}
+				    />
+            <Button link="/agenda-tu-cita" style="primary" classes="w-full sm:w-auto h-auto py-3">
+              <Icon name="clipboard-document-list" class="size-8" />
+              <span class="text-center">
+               Sesión Negocios y PyMEs<br> para ti que eres dueño de negocio
+              </span>
+            </Button>
+          </Col>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5️⃣ DOS COLUMNAS FINALES -->
+  <section>
+    <div class="container mx-auto px-6 py-20">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="items-center justify-center text-sm text-slate-400">
+          <iframe src="https://api.leadconnectorhq.com/widget/booking/AIouF1lzcSiOat4vmZY3" style="width: 100%;border:none;overflow: hidden;" scrolling="no" id="AIouF1lzcSiOat4vmZY3_1769396084143"></iframe><br>
+        
+        </div>
+        <div class="items-center justify-center text-sm text-slate-400">
+         <iframe
+          src="https://api.leadconnectorhq.com/widget/form/I9AZWBlSL3Nl42lK1EQ4"
+          class="w-full h-[900px] border-none rounded-md"
+          id="inline-I9AZWBlSL3Nl42lK1EQ4" 
+          data-layout="{'id':'INLINE'}"
+          data-trigger-type="alwaysShow"
+          data-trigger-value=""
+          data-activation-type="alwaysActivated"
+          data-activation-value=""
+          data-deactivation-type="neverDeactivate"
+          data-deactivation-value=""
+          data-form-name="FormAds-Prospectos-ALV"
+          data-height="953"
+          data-layout-iframe-id="inline-I9AZWBlSL3Nl42lK1EQ4"
+          data-form-id="I9AZWBlSL3Nl42lK1EQ4"
+          title="FormAds-Prospectos-ALV"
+         ></iframe>
+        <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
