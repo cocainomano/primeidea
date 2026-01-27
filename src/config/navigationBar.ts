@@ -43,7 +43,7 @@ export const navigationBarData: NavData = {
 			name: 'Productos',
 			link: '#',
 			submenu: [
-				{ name: 'Plan de Retiro', link: '/blog' },
+				{ name: 'Plan de Retiro', link: '/plan-personal-de-retiro/' },
 				{ name: 'Fondo de Ahorro', link: '/changelog' },
 				{ name: 'Fideicomiso Educativo', link: '/faq' },
 				{ name: 'Blindaje Empresarial', link: '/terms' },

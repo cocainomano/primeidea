@@ -49,17 +49,17 @@ export const footerNavigationData: FooterData = {
 		},
 		address: 'Calle 123, Col. Centro, C.P. 12345, Ciudad de México, México',
 		conduseflogo: {
-			src: '/src/assets/logos/condusefv2.png',
+			src: '/logos/condusefv2.png',
 			alt: 'Condusef',
 			text: ''
 		},
 		logoburo: {
-			src: '/src/assets/logos/logo-buro-v2.png',
+			src: '/logos/logo-buro-v2.png',
 			alt: 'Buro',
 			text: ''
 		},
 		logoesr: {
-			src: '/src/assets/logos/logo-esr.png',
+			src: '/logos/logo-esr.png',
 			alt: 'ESR',
 			text: ''
 		},
