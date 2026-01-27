@@ -28,6 +28,14 @@ const { footerAbout, footerColumns, subFooter } = footerNavigationData
 					<p>
 						{footerAbout.aboutText}
 					</p>
+					<p>
+						{footerAbout.address}
+					</p>
+					<div class="flex flex-row gap-4 mt-4">
+						<img src={footerAbout.conduseflogo.src} alt={footerAbout.conduseflogo.alt} width="90" height="90" />
+						<img src={footerAbout.logoburo.src} alt={footerAbout.logoburo.alt} width="90" height="90" />
+						<img src={footerAbout.logoesr.src} alt={footerAbout.logoesr.alt} width="175" height="76" />
+					</div>
 				</div>
 				{
 					footerColumns.map((column) => (

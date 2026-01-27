@@ -2,12 +2,13 @@ import { defineConfig } from "astro/config";
 import partytown from "@astrojs/partytown";
 import tailwind from "@astrojs/tailwind";
 import icon from "astro-icon";
-
 import sitemap from "@astrojs/sitemap";
+import path from "path";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://foxi.netlify.app/",
+  site: "https://primeidea.iq-zone.com/",
+
   integrations: [
     tailwind(),
     icon(),
@@ -18,4 +19,12 @@ export default defineConfig({
       },
     }),
   ],
+
+  vite: {
+    resolve: {
+      alias: {
+        "@": path.resolve("./src"),
+      },
+    },
+  },
 });

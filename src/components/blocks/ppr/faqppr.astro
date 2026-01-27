@@ -1,0 +1,77 @@
+---
+// Basic FAQ section
+// ------------
+// Description: A section that contains a list of frequently asked questions with answers.
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+// - UI
+import Accordion from '../../ui/Accordion.astro'
+import Card from '../../ui/cards/partials/Card.astro'
+// Props
+type Props = {
+	classes?: string
+}
+const { classes } = Astro.props
+---
+<Section id="FAQ" classes={classes}>
+	<Row>
+		<Col span="12" align="center" classes="">
+			<h2 class="text-pretty">
+				¿Tienes <strong>preguntas?</strong>
+			</h2>
+			<p class="text-lg leading-relaxed">
+				¿Hay algo que podamos profundizar más? No dudes en preguntarnos, estamos aquí para ayudarte. Te presentamos las
+				respuestas a las preguntas más frecuentes de nuestro <strong>Plan Inteligente de Ahorro</strong>. 
+			</p>
+		</Col>
+		<Col span="2" />
+		<Col span="13">
+			<Card classes="divide-y divide-neutral-100 dark:divide-neutral-800">
+				<Accordion
+					title="¿Cuanto necesito para iniciar mi plan?"
+					text="Aportaciones muy accesibles desde $2,000 al mes. Nuestros asesores te ayudan y guían para ajustar el plan A TU VIDA, no al revés."
+				/>
+				<Accordion
+					title="¿Qué pasa si un mes no puedo aportar a mi ahorro?"
+					text="Puedes pausar hasta 12 meses sin perder prácticamente nada, en algunos de nuestros planes no pierdes ni el bono de fidelidad"
+				/>
+				<Accordion
+					title="¿Qué tan seguro es el Plan Inteligente de Ahorro con Prime Idea Asesores?"
+					text="Nuestros planes son seguros, con el respaldo de las marcas líderes como Allianz, Seguros Monterrey, además te ofrecemos asesoría cercana y profesional."
+				/>
+				<Accordion
+					title="¿Cuándo debo comenzar a ahorrar para mi retiro?"
+					text="Cuanto antes comiences a ahorrar e invertir ¡mejor!, más tiempo tendrás para acumular un fondo para tu jubilación. Recomendamos comenzar a ahorrar a partir de los 25 años. Sin embargo entendemos que no todos tienen esa oportunidad, te asesoraremos para que comiences a ahorrar lo antes posible sin importar en la edad en que te encuentres"
+				/>
+                <Accordion
+					title="¿Cuál es la ventaja si sigo los Planes de Ahorro al pie de la letra?"
+					text="Un plan sólido, beneficios fiscales, crecimiento limpio y un bono que puede igualar hasta el 100% de tu primer año. Y una vida llena de tranquilidad."
+				/>
+                <Accordion
+					title="Tengo negocio propio y otras aseguradoras no quisieron hacerme un plan. ¿Prime Idea Asesores sí puede?"
+					text="Claro que sí. En Prime Idea Asesores apoyamos a emprendedores y dueños de negocio que buscan un futuro tranquilo. No importa si tu negocio es pequeño o mediano: podemos armar un plan flexible que se adapte a tu ritmo y a tus ingresos.Un plan sólido, beneficios fiscales, crecimiento limpio y un bono que puede igualar hasta el 100% de tu primer año. Y una vida llena de tranquilidad."
+				/>
+				<Accordion
+					title="¿Donde esta ubicado Prime Idea Asesores?"
+					text="Tenemos oficinas en el norte de la Ciudad de México, sin embargo asesoramos a personas de todo México, gracias a las tecnologías de la información, nunca vamos a solicitar información personal de ti, solo lo que necesitamos para asistirte."
+				/>
+                <Accordion
+					title="¡Tengo más preguntas y dudas!"
+					text="Mandanos un WhatsApp, te ayudamos en todo momento. ¡No dudes en preguntarnos!"
+				/>
+			</Card>
+		</Col>
+		<Col span="2" />
+	</Row>
+</Section>
+
+<style>
+	.page-header {
+		@apply mx-auto max-w-3xl;
+	}
+	.page-header__text {
+		@apply text-lg leading-relaxed;
+	}
+</style>

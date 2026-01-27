@@ -1,0 +1,80 @@
+---
+// Seccion de tarjetas de retiro
+// ------------
+// Description: A grid 
+// Components
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+// - UI
+// - UI
+import { Image } from 'astro:assets'
+import Button from '../../ui/Button.astro'
+import { Icon } from 'astro-icon/components'
+// Content
+// - Cards
+import imgSat        from '../../../assets/ppr/logiSAT.png'
+import imgInversion  from '../../../assets/ppr/logiInversion.png'
+import imgBono       from '../../../assets/ppr/logiBono.png'
+import imgAporta     from '../../../assets/ppr/logiAporta.png'
+
+
+---
+<Section id="features" padding="none" classes="pb-0">
+    <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100 mb-6 mt-4">
+       Plan Inteligente de Ahorro <strong>Optimaxx Plus</strong> de Allianz
+    </h2>
+    <Row>
+        <Col span="3" classes="flex flex-col gap-6">
+           
+            <div class="flex h-full flex-col border border-neutral-100 dark:border-neutral-800 rounded-2xl">
+                <Image src={imgSat} alt="Es Dedudible de Impuestos" class="mx-auto w-40 mt-6" />
+                <div class="px-6 pb-6 pt-2 md:px-8 md:pb-8 md:pt-2 text-center">
+                    <h3 class="text-xl font-bold text-neutral-800 dark:text-neutral-100 mb-4">Es Dedudible de Impuestos</h3>
+                    <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">Deduce ante al <b>SAT</b> para que te regrese dinero. Podrás elegir deducibilidad, exención y/o diferimiento de impuestos de acuerdo a tu estilo de vida y necesidades.</p>
+                </div>
+                
+            </div>
+		</Col>
+        <Col span="3" classes="flex flex-col gap-6">
+            <div class="flex h-full flex-col border border-neutral-100 dark:border-neutral-800 rounded-2xl">
+                <Image src={imgInversion} alt="Es Dedudible de Impuestos" class="mx-auto w-40 mt-6" />
+                <div class="px-6 pb-6 pt-2 md:px-8 md:pb-8 md:pt-2 text-center">
+                    <h3 class="text-xl font-bold text-neutral-800 dark:text-neutral-100 mb-4">Portafolio Inversionista</h3>
+                    <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">Con portafolios de inversión, tu plan PPR y te ayuda a lograr tus metas financieras.</p>
+                </div>
+                
+            </div>
+		</Col>
+        <Col span="3" classes="flex flex-col gap-6">
+            <div class="flex h-full flex-col border border-neutral-100 dark:border-neutral-800 rounded-2xl">
+                <Image src={imgBono} alt="Es Dedudible de Impuestos" class="mx-auto w-40 mt-6" />
+                <div class="px-6 pb-6 pt-2 md:px-8 md:pb-8 md:pt-2 text-center">
+                    <h3 class="text-xl font-bold text-neutral-800 dark:text-neutral-100 mb-4">Bono de Inversión</h3>
+                    <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">Este beneficio se calcula con base en las aportaciones realizadas durante el primer año y representa un incentivo adicional. Te bonificamos por invertir en el plan.</p>
+                </div>
+                
+            </div>
+		</Col>
+        <Col span="3" classes="flex flex-col gap-6">
+            <div class="flex h-full flex-col border border-neutral-100 dark:border-neutral-800 rounded-2xl">
+                <Image src={imgAporta} alt="Es Dedudible de Impuestos" class="mx-auto w-40 mt-6" />
+                <div class="px-6 pb-6 pt-2 md:px-8 md:pb-8 md:pt-2 text-center">
+                    <h3 class="text-xl font-bold text-neutral-800 dark:text-neutral-100 mb-4">Aportaciones Flexibles y comodas</h3>
+                    <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">Con aportaciones flexibles y comodas, puedes ajustar tus pagos según tus necesidades y presupuesto. Inicias con la aportación minima $2,000 al mes</p>
+                </div>
+                
+            </div>
+		</Col>
+    </Row>
+</Section>
+
+<style>
+	.page-header {
+		@apply mx-auto max-w-3xl;
+	}
+	.page-header__text {
+		@apply text-lg leading-relaxed;
+	}
+</style>
