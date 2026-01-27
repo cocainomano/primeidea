@@ -24,7 +24,7 @@ const {
 	figcaption = '',
 	cite = '',
 	bg,
-	bgPosition = 'center'
+	bgPosition = 'right'
 } = Astro.props
 ---
 
@@ -41,10 +41,10 @@ const {
 				blockquote={blockquote}
 				figcaption={figcaption}
 				cite={cite}
-				align="center"
+				align="left"
 				size="4xl"
 				mobileSize="2xl"
-				classes="!leading-tight font-bold xl:text-5xl max-w-4xl mx-auto"
+				classes="!leading-tight font-bold text-left md:text-center text-fuchsia-300 md:text-white xl:text-5xl max-w-4xl md:mx-auto"
 				quoteSize={112}
 			/>
 		</Col>
