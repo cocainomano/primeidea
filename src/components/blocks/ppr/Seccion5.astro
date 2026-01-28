@@ -1,5 +1,7 @@
 ---
 import { Icon } from 'astro-icon/components'
+import { Whatsapp } from 'iconsax-astro';
+import Button from '../../ui/Button.astro'
 ---
 <section class="container mx-auto max-w-7xl">
     <div class="container mx-auto py-8">
@@ -24,7 +26,7 @@ import { Icon } from 'astro-icon/components'
                 <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900/30">
                   <Icon name="streamline-ultimate-color:maps" class="size-6 text-blue-600 dark:text-blue-400" />
                 </div>
-                 <p class="leading-relaxed"><strong>Trazamos un mapa real:</strong> Creamos proyecciones claras a 5, 10 y 15 años. Los escenarios son lo mas apegados a la realidad posible para que sepas exactamente qué esperar.</p>
+                 <p class="leading-relaxed"><strong>Trazamos un mapa real:</strong> Creamos <strong>proyecciones claras a 5, 10 y 15 años</strong>. Los escenarios son lo mas apegados a la realidad posible para que sepas exactamente qué esperar.</p>
               </li>
               <li class="flex items-start gap-4" >
                 <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900/30">
@@ -42,4 +44,66 @@ import { Icon } from 'astro-icon/components'
         </p>
       </div>
     </div>
-  </section>
+    <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <Button link="#" style="primary" classes="w-full sm:w-auto !bg-green-600 !hover:bg-green-700 border-none">
+            <Whatsapp size={24} color="#ffffff" type="Bold" />
+            Contacto por WhatsApp
+        </Button>
+    </div>
+    <div class="container mx-auto py-8">
+  <div class="grid gap-12 md:grid-cols-2 items-center">
+    
+    <!-- COLUMNA TEXTO -->
+    <div class="text-base text-slate-400">
+      <h4>¿Cómo se siente un <strong>Plan de Retiro Inteligente</strong> bien estructurado?</h4>
+      <p class="mt-4">
+        Y cuando está hecho a tu medida, se convierte en una forma inteligente de vivir como quieres, desde hoy.
+      </p>
+      <p class="mt-4">
+       <strong>Así se siente un Plan de Retiro Inteligente - Optimaxx Plus bien estructurado:</strong>
+      </p>
+
+      <ul class="mt-10 space-y-6">
+        <li class="flex items-start gap-4">
+          <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900/30">
+            <Icon name="streamline-ultimate-color:calendar-date" class="size-6 text-blue-600 dark:text-blue-400" />
+          </div>
+          <p class="leading-relaxed"><strong>Flexible</strong>, porque se adapta a cómo vives y a cómo cambian tus planes.</p>
+        </li>
+
+        <li class="flex items-start gap-4">
+          <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900/30">
+            <Icon name="streamline-ultimate-color:gesture-double-tap" class="size-6 text-blue-600 dark:text-blue-400" />
+          </div>
+          <p class="leading-relaxed"><strong>A tu ritmo</strong>, sin exigirte sacrificios innecesarios.</p>
+        </li>
+
+        <li class="flex items-start gap-4">
+          <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900/30">
+            <Icon name="streamline-ultimate-color:love-it-flag" class="size-6 text-blue-600 dark:text-blue-400" />
+          </div>
+          <p class="leading-relaxed"><strong>Personal</strong>, pensado para ti y para tu estilo de vida.</p>
+        </li>
+
+        <li class="flex items-start gap-4">
+          <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900/30">
+            <Icon name="streamline-ultimate-color:lock-shield" class="size-6 text-blue-600 dark:text-blue-400" />
+          </div>
+          <p class="leading-relaxed"><strong>Libre</strong>, porque te da opciones y control, no restricciones.</p>
+        </li>
+      </ul>
+    </div>
+
+    <!-- COLUMNA IMAGEN -->
+    <div class="relative">
+     <a href="#"><img 
+        src="/ppr/everywants.jpg" 
+        alt="Un Plan Personal de Retiro bien estructurado"
+        class="w-full h-auto rounded-2xl shadow-xl"
+      /></a>
+    </div>
+
+  </div>
+</div>
+
+</section>  

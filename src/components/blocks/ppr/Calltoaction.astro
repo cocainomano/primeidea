@@ -1,0 +1,66 @@
+---
+// Basic Dark Call To Action section
+// ------------
+// Description: A centered call to action section that contains: a title, text, background image, notification and a button.
+
+// Components
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+// - UI
+import CTA from '../../ui/CTA.astro'
+import Button from '../../ui/Button.astro'
+import ChipNotification from '../../ui/ChipNotification.astro'
+import { Image } from 'astro:assets'
+import Highlight from '../../ui/Highlight.astro'
+ 
+// Content
+import ctaImage from '../../../assets/cta-dark-bg.webp'
+import badge from '../../../assets/pdf.svg'
+import calculeitor from  '../../../assets/calculator-alv.svg'
+---
+
+<Section padding="none">
+	<Row>
+		<Col span="1" />
+		<Col span="12">
+			<CTA
+				title="Descarga el Folleto de Optimaxx Plus"
+				text ="Conoce todos los beneficios que OptiMaxx Plus tiene para ti y comienza tu plan hoy mismo."
+				mode ="dark"
+				bg={ctaImage}
+			>
+				<div class="flex flex-col md:flex-row justify-center gap-8">
+	            <!-- BOTÓN 1 -->
+                    <div class="flex flex-col items-center gap-4">
+                        <a href="https://www.allianz.com.mx/content/dam/onemarketing/iberolatam/allianz-mx/ahorro---plus/documentos---plus/Folleto%20-%20PLUS.pdf" target="_blank">
+                            <ChipNotification radius="rounded-full" classes="box">
+                                <Image src={badge} alt="Optimaxx Plus" class="h-12 w-12" slot="button" />
+                                <span class="hidden md:block">Optimaxx</span>
+                                <Highlight classes="md:ml-2">Plus</Highlight>
+                            </ChipNotification>
+                        </a>
+                        <a href="https://www.allianz.com.mx/content/dam/onemarketing/iberolatam/allianz-mx/ahorro---plus/documentos---plus/Folleto%20-%20PLUS.pdf" target="_blank">
+                            <Button size="lg" style="primary">Descargar Folleto</Button>
+                        </a>
+                    </div>
+
+                    <!-- BOTÓN 2 -->
+                    <div class="flex flex-col items-center gap-4">
+                        <a href="https://portal.myallianz.com.mx/sim-plus/escritorio/inicio.hb?_gl=1*130j097*_gcl_au*MTkyMTA2Mzc1OS4xNzE5NDk2NjQ0" target="_blank">
+                            <ChipNotification radius="rounded-full" classes="box">
+                                <Image src={calculeitor} alt="Optimaxx Plus" class="h-12 w-12" slot="button" />
+                                <span class="hidden md:block">Calcula</span>
+                                <Highlight classes="md:ml-2">Tu Plan</Highlight>
+                            </ChipNotification>
+                        </a>
+                        <a href="https://portal.myallianz.com.mx/sim-plus/escritorio/inicio.hb?_gl=1*130j097*_gcl_au*MTkyMTA2Mzc1OS4xNzE5NDk2NjQ0"  target="_blank">
+                            <Button size="lg" style="primary">Calculadora</Button>
+                        </a>
+                    </div>
+			    </div>
+		    </CTA>
+		</Col>
+	</Row>
+</Section>
