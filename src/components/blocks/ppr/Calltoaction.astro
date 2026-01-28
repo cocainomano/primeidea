@@ -17,8 +17,8 @@ import Highlight from '../../ui/Highlight.astro'
  
 // Content
 import ctaImage from '../../../assets/cta-dark-bg.webp'
-import badge from '../../../assets/pdf.svg'
-import calculeitor from  '../../../assets/calculator-alv.svg'
+import whats from '../../../assets/whats.svg'
+import calendar from  '../../../assets/wihitecal.svg'
 ---
 
 <Section padding="none">
@@ -26,37 +26,31 @@ import calculeitor from  '../../../assets/calculator-alv.svg'
 		<Col span="1" />
 		<Col span="12">
 			<CTA
-				title="Descarga el Folleto de Optimaxx Plus"
-				text ="Conoce todos los beneficios que OptiMaxx Plus tiene para ti y comienza tu plan hoy mismo."
+				title="¿Quieres nas información?"
+				text ="Estamos para ayudarte a entender tus opciones y tomar la decisión correcta."
 				mode ="dark"
 				bg={ctaImage}
 			>
 				<div class="flex flex-col md:flex-row justify-center gap-8">
 	            <!-- BOTÓN 1 -->
                     <div class="flex flex-col items-center gap-4">
-                        <a href="https://www.allianz.com.mx/content/dam/onemarketing/iberolatam/allianz-mx/ahorro---plus/documentos---plus/Folleto%20-%20PLUS.pdf" target="_blank">
+                        <a href="#" target="_blank">
                             <ChipNotification radius="rounded-full" classes="box">
-                                <Image src={badge} alt="Optimaxx Plus" class="h-12 w-12" slot="button" />
-                                <span class="hidden md:block">Optimaxx</span>
-                                <Highlight classes="md:ml-2">Plus</Highlight>
+                                <Image src={whats} alt="Optimaxx Plus" class="h-12 w-12" slot="button" />
+                                <span class="hidden md:block">Quiero mi Fondo de </span>
+                                <Highlight classes="md:ml-2">Ahorro Inteligente</Highlight>
                             </ChipNotification>
-                        </a>
-                        <a href="https://www.allianz.com.mx/content/dam/onemarketing/iberolatam/allianz-mx/ahorro---plus/documentos---plus/Folleto%20-%20PLUS.pdf" target="_blank">
-                            <Button size="lg" style="primary">Descargar Folleto</Button>
                         </a>
                     </div>
 
                     <!-- BOTÓN 2 -->
                     <div class="flex flex-col items-center gap-4">
-                        <a href="https://portal.myallianz.com.mx/sim-plus/escritorio/inicio.hb?_gl=1*130j097*_gcl_au*MTkyMTA2Mzc1OS4xNzE5NDk2NjQ0" target="_blank">
+                        <a href="calendar.html" target="_blank">
                             <ChipNotification radius="rounded-full" classes="box">
-                                <Image src={calculeitor} alt="Optimaxx Plus" class="h-12 w-12" slot="button" />
-                                <span class="hidden md:block">Calcula</span>
-                                <Highlight classes="md:ml-2">Tu Plan</Highlight>
+                                <Image src={calendar} alt="Optimaxx Plus" class="h-12 w-12" slot="button" />
+                                <span class="hidden md:block">Agendar para </span>
+                                <Highlight classes="md:ml-2">diagnóstico express</Highlight>
                             </ChipNotification>
-                        </a>
-                        <a href="https://portal.myallianz.com.mx/sim-plus/escritorio/inicio.hb?_gl=1*130j097*_gcl_au*MTkyMTA2Mzc1OS4xNzE5NDk2NjQ0"  target="_blank">
-                            <Button size="lg" style="primary">Calculadora</Button>
                         </a>
                     </div>
 			    </div>

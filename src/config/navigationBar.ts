@@ -44,7 +44,7 @@ export const navigationBarData: NavData = {
 			link: '#',
 			submenu: [
 				{ name: 'Plan de Retiro', link: '/plan-personal-de-retiro/' },
-				{ name: 'Fondo de Ahorro', link: '/changelog' },
+				{ name: 'Fondo de Ahorro', link: '/fondo-de-ahorro-inteligente/' },
 				{ name: 'Fideicomiso Educativo', link: '/faq' },
 				{ name: 'Blindaje Empresarial', link: '/terms' },
 				{ name: 'Fondo de Ahorro para Mujeres', link: '/terms' },

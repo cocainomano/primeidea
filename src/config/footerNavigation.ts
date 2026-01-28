@@ -73,8 +73,8 @@ export const footerNavigationData: FooterData = {
 					subCategoryLink: '/plan-personal-de-retiro'
 				},
 				{
-					subCategory: 'Fondo de Ahorro',
-					subCategoryLink: '/fondo-de-ahorro'
+					subCategory: 'Fondo de Ahorro Inteligente',
+					subCategoryLink: '/fondo-de-ahorro-inteligente'
 				},
 				{
 					subCategory: 'Fideicomiso Educativo',
