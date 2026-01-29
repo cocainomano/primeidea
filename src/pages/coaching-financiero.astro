@@ -1,0 +1,22 @@
+---
+/* Main Layout Fideicomiso Educativo */
+import Layout     from "../layouts/Layout.astro";
+/* Shit necesaria para el hero del Fideicomiso Educativo */
+import Myhero    from '../components/blocks/coaching/herofondo.astro'
+import heromorra from '../assets/heroPPRnew.jpg'
+import Seccion1 from '../components/blocks/coaching/Seccion1.astro'
+import Seccion2 from '@/components/blocks/coaching/Seccion2.astro'
+import Seccion3 from '@/components/blocks/coaching/Seccion3.astro'
+import Calltoac from '@/components/blocks/coaching/Calltoaction.astro'
+
+
+/* Template Shits Compoments  */
+---
+
+<Layout title="Coaching Financiero by Mariana Carballo | Prime Idea">
+    <Myhero bg={heromorra} bgPosition="right" />
+     <Seccion1 />  <!-- Seccion 1 ALV  Esta seccion termina hasta los iconos de "resultado por diseño"-->
+     <Seccion2 />       
+     <Seccion3 />       
+     <Calltoac />       
+</Layout>

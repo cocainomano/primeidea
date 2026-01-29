@@ -1,0 +1,49 @@
+---
+// Basic Dark Call To Action section
+// ------------
+// Description: A centered call to action section that contains: a title, text, background image, notification and a button.
+
+// Components
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+// - UI
+import CTA from '../../ui/CTA.astro'
+import Button from '../../ui/Button.astro'
+import ChipNotification from '../../ui/ChipNotification.astro'
+import { Image } from 'astro:assets'
+import Highlight from '../../ui/Highlight.astro'
+ 
+// Content
+import ctaImage from '../../../assets/cta-dark-bg.webp'
+import whats from '../../../assets/whats.svg'
+import calendar from  '../../../assets/wihitecal.svg'
+---
+
+<Section padding="none">
+	<Row>
+		<Col span="1" />
+		<Col span="12">
+			<CTA
+				title="¿Quieres nas información?"
+				text ="Estamos para ayudarte a entender tus opciones y tomar la decisión correcta."
+				mode ="dark"
+				bg={ctaImage}
+			>
+				<div class="flex flex-col md:flex-row justify-center gap-8">
+	            <!-- BOTÓN 1 -->
+                    <div class="flex flex-col items-center gap-4">
+                        <a href="#" target="_blank">
+                            <ChipNotification radius="rounded-full" classes="box">
+                                <Image src={whats} alt="Optimaxx Plus" class="h-12 w-12" slot="button" />
+                                <span class="hidden md:block">Quiero más información </span>
+                                <Highlight classes="md:ml-2">de Blindaje a mi patrimonio</Highlight>
+                            </ChipNotification>
+                        </a>
+                    </div>
+			    </div>
+		    </CTA>
+		</Col>
+	</Row>
+</Section>

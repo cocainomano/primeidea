@@ -45,15 +45,14 @@ export const navigationBarData: NavData = {
 			submenu: [
 				{ name: 'Plan de Retiro', link: '/plan-personal-de-retiro/' },
 				{ name: 'Fondo de Ahorro', link: '/fondo-de-ahorro-inteligente/' },
-				{ name: 'Fideicomiso Educativo', link: '/faq' },
-				{ name: 'Blindaje Empresarial', link: '/terms' },
-				{ name: 'Fondo de Ahorro para Mujeres', link: '/terms' },
-				{ name: 'Consultoría Financiera', link: '/terms' },
+				{ name: 'Fideicomiso Educativo', link: '/fideicomiso-educativo/' },
+				{ name: 'Blindaje Empresarial', link: '/blindaje-empresarial/' },
+				{ name: 'Vida Mujer', link: '/vida-mujer/' },
+				{ name: 'Coaching Financiero', link: '/coaching-financiero/' },
 			]
 		},
-		{ name: 'Nosotros', link: '/pricing' },
-		{ name: 'FAQ', link: '/features' },
-		{ name: 'Contacto', link: '/contact' }
+		{ name: 'Nosotros', link: '/nosotros' },
+		{ name: 'Contacto', link: '/contacto' }
 	],
-	navActions: [{ name: 'Calculadora', link: '/', style: 'primary', size: 'lg' }]
+	navActions: [{ name: 'Agenda tu cita', link: '/', style: 'primary', size: 'lg' }]
 }

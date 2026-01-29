@@ -1,0 +1,80 @@
+---
+// Seccion de tarjetas de retiro
+// ------------
+// Description: A grid 
+// Components
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+// - UI
+// - UI
+import { Image } from 'astro:assets'
+import Button from '../../ui/Button.astro'
+import { Icon } from 'astro-icon/components'
+// Content
+// - Cards
+import imgSat        from '../../../assets/ppr/logiSAT.png'
+import imgInversion  from '../../../assets/ppr/logiInversion.png'
+import imgBono       from '../../../assets/ppr/logiBono.png'
+import imgAporta     from '../../../assets/ppr/logiAporta.png'
+
+
+---
+<Section id="features" padding="none" classes="pb-0">
+    <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100 mb-6 mt-4">
+       Beneficios principales: <strong>tú decides cómo invertir</strong>
+    </h2>
+    <Row>
+        <Col span="3" classes="flex flex-col gap-6">
+           
+            <div class="flex h-full flex-col border border-neutral-100 dark:border-neutral-800 rounded-2xl">
+                <Image src={imgSat} alt="Fondos garantizados en UDIs" class="mx-auto w-40 mt-6" />
+                <div class="px-6 pb-6 pt-2 md:px-8 md:pb-8 md:pt-2 text-center">
+                    <h3 class="text-xl font-bold text-neutral-800 dark:text-neutral-100 mb-4">Fondos garantizados en UDIs</h3>
+                    <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">Para que tu dinero no pierda valor a causa de la inflación.</p>
+                </div>
+                
+            </div>
+		</Col>
+        <Col span="3" classes="flex flex-col gap-6">
+            <div class="flex h-full flex-col border border-neutral-100 dark:border-neutral-800 rounded-2xl">
+                <Image src={imgInversion} alt="Es Dedudible de Impuestos" class="mx-auto w-40 mt-6" />
+                <div class="px-6 pb-6 pt-2 md:px-8 md:pb-8 md:pt-2 text-center">
+                    <h3 class="text-xl font-bold text-neutral-800 dark:text-neutral-100 mb-4">En dólares</h3>
+                    <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">Para protegerte frente a posibles devaluaciones,  tu dinero se mantiene en dólares.</p>
+                </div>
+                
+            </div>
+		</Col>
+        <Col span="3" classes="flex flex-col gap-6">
+            <div class="flex h-full flex-col border border-neutral-100 dark:border-neutral-800 rounded-2xl">
+                <Image src={imgAporta} alt="Es Dedudible de Impuestos" class="mx-auto w-40 mt-6" />
+                <div class="px-6 pb-6 pt-2 md:px-8 md:pb-8 md:pt-2 text-center">
+                    <h3 class="text-xl font-bold text-neutral-800 dark:text-neutral-100 mb-4">En fondos de inversión</h3>
+                    <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">Para buscar mayor crecimiento, rendimientos y diversificación en portafolios seguros.</p>
+                </div>
+                
+            </div>
+		</Col>
+         <Col span="3" classes="flex flex-col gap-6">
+            <div class="flex h-full flex-col border border-neutral-100 dark:border-neutral-800 rounded-2xl">
+                <Image src={imgAporta} alt="Es Dedudible de Impuestos" class="mx-auto w-40 mt-6" />
+                <div class="px-6 pb-6 pt-2 md:px-8 md:pb-8 md:pt-2 text-center">
+                    <h3 class="text-xl font-bold text-neutral-800 dark:text-neutral-100 mb-4">Con componente garantizado</h3>
+                    <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">Si prefieres certidumbre y seguridad.</p>
+                </div>
+                
+            </div>
+		</Col>
+    </Row>
+</Section>
+
+<style>
+	.page-header {
+		@apply mx-auto max-w-3xl;
+	}
+	.page-header__text {
+		@apply text-lg leading-relaxed;
+	}
+</style>

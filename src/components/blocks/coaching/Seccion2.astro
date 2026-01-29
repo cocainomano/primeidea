@@ -1,0 +1,78 @@
+---
+// Seccion de tarjetas de retiro
+// ------------
+// Description: A grid 
+// Components
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+// - UI
+// - UI
+import { Image } from 'astro:assets'
+// Content
+// - Cards
+import imgSat        from '../../../assets/ppr/logiSAT.png'
+import imgInversion  from '../../../assets/ppr/logiInversion.png'
+import imgBono       from '../../../assets/ppr/logiBono.png'
+import imgAporta     from '../../../assets/ppr/logiAporta.png'
+
+
+---
+<Section id="features" padding="none" classes="pb-0">
+    <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100 mb-6 mt-4">
+       Beneficios principales: <strong>tú decides cómo invertir</strong>
+    </h2>
+    <Row>
+        <Col span="3" classes="flex flex-col gap-6">
+           
+            <div class="flex h-full flex-col border border-neutral-100 dark:border-neutral-800 rounded-2xl">
+                <Image src={imgSat} alt="Fondos garantizados en UDIs" class="mx-auto w-40 mt-6" />
+                <div class="px-6 pb-6 pt-2 md:px-8 md:pb-8 md:pt-2 text-center">
+                    <h3 class="text-xl font-bold text-neutral-800 dark:text-neutral-100 mb-4">Análisis Financiero 360°/Plan Maestro</h3>
+                    <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">Realizamos un análisis exhaustivo de tu situación financiera, considerando tus objetivos, riesgos, recursos y preferencias personales.</p>
+                </div>
+                
+            </div>
+		</Col>
+        <Col span="3" classes="flex flex-col gap-6">
+            <div class="flex h-full flex-col border border-neutral-100 dark:border-neutral-800 rounded-2xl">
+                <Image src={imgInversion} alt="Es Dedudible de Impuestos" class="mx-auto w-40 mt-6" />
+                <div class="px-6 pb-6 pt-2 md:px-8 md:pb-8 md:pt-2 text-center">
+                    <h3 class="text-xl font-bold text-neutral-800 dark:text-neutral-100 mb-4">Optimización y Estrategia Fiscal</h3>
+                    <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">Optimizamos tus inversiones para maximizar tus beneficios fiscales y minimizar los costos.</p>
+                </div>
+                
+            </div>
+		</Col>
+        <Col span="3" classes="flex flex-col gap-6">
+            <div class="flex h-full flex-col border border-neutral-100 dark:border-neutral-800 rounded-2xl">
+                <Image src={imgAporta} alt="Es Dedudible de Impuestos" class="mx-auto w-40 mt-6" />
+                <div class="px-6 pb-6 pt-2 md:px-8 md:pb-8 md:pt-2 text-center">
+                    <h3 class="text-xl font-bold text-neutral-800 dark:text-neutral-100 mb-4">Inversiones Diversificadas</h3>
+                    <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">Implementación de un Sistema de Inversión diversificado e inteligente</p>
+                </div>
+                
+            </div>
+		</Col>
+         <Col span="3" classes="flex flex-col gap-6">
+            <div class="flex h-full flex-col border border-neutral-100 dark:border-neutral-800 rounded-2xl">
+                <Image src={imgAporta} alt="Es Dedudible de Impuestos" class="mx-auto w-40 mt-6" />
+                <div class="px-6 pb-6 pt-2 md:px-8 md:pb-8 md:pt-2 text-center">
+                    <h3 class="text-xl font-bold text-neutral-800 dark:text-neutral-100 mb-4">Acompañamiento Continuo</h3>
+                    <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">revisiones trimestrales, sistema de alertas, modificaciones ante cambios personales o laborales y actualizaciones en los mercados.</p>
+                </div>
+                
+            </div>
+		</Col>
+    </Row>
+</Section>
+
+<style>
+	.page-header {
+		@apply mx-auto max-w-3xl;
+	}
+	.page-header__text {
+		@apply text-lg leading-relaxed;
+	}
+</style>
