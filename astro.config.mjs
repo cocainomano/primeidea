@@ -5,7 +5,6 @@ import icon from "astro-icon";
 import sitemap from "@astrojs/sitemap";
 import path from "path";
 
-// https://astro.build/config
 export default defineConfig({
   site: "https://primeidea.iq-zone.com/",
 
@@ -25,6 +24,9 @@ export default defineConfig({
       alias: {
         "@": path.resolve("./src"),
       },
+    },
+    ssr: {
+      noExternal: ["iconsax-astro"],
     },
   },
 });
