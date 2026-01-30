@@ -5,7 +5,7 @@
 
 // Components
 // - Layout
-import Section from '../../ui/Section.astro'
+/*import Section from '../../ui/Section.astro'
 import Row from '../../ui/Row.astro'
 import Col from '../../ui/Col.astro'
 // - UI
@@ -24,9 +24,9 @@ const {
 	figcaption = 'Una mujer que tiene independencia financiera tiene la capacidad de tomar sus propias decisiones.',
 	cite = 'Cherie Blair',
 	bg,
-	bgPosition = 'left'
+	bgPosition = 'right'
 } = Astro.props
----
+
 
 <Section
 	id="testimonial"
@@ -41,7 +41,7 @@ const {
 				blockquote={blockquote}
 				figcaption={figcaption}
 				cite={cite}
-				align="left"
+				align="right"
 				size="4xl"
 				mobileSize="2xl"
 				classes="!leading-tight font-bold text-left md:text-center text-fuchsia-300 md:text-white xl:text-5xl max-w-4xl md:mx-auto"
@@ -50,3 +50,41 @@ const {
 		</Col>
 	</Row>
 </Section>
+*/
+---
+<section class="bg-slate-950 text-white overflow-hidden">
+  <div class="container mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+    
+    <!-- IMAGEN -->
+    <div class="order-1 md:order-2 relative">
+      <img 
+        src="/src/assets/morraahorro.jpg" 
+        alt="Asesoría financiera profesional"
+        class="w-full h-64 md:h-[420px] object-cover rounded-2xl shadow-2xl"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-slate-950/70 via-slate-950/40 to-transparent rounded-2xl"></div>
+    </div>
+
+    <!-- TEXTO -->
+    <div class="order-2 md:order-1">
+      <h1 class="text-3xl md:text-5xl font-extrabold leading-tight text-white">
+        Tu dinero con
+        <span class="block text-white">dirección</span>
+      </h1>
+
+      <p class="mt-5 text-base md:text-lg text-slate-300 max-w-xl">
+        Acompañamiento profesional para tomar decisiones financieras con claridad y estrategia.
+      </p>
+
+      <div class="mt-8 flex flex-col sm:flex-row gap-4">
+        <a href="#agenda" class="bg-white hover:bg-fuchsia-700 px-6 py-3 rounded-lg font-semibold text-center">
+          Agenda una cita
+        </a>
+        <a href="#servicios" class="border border-white/30 hover:bg-white/10 px-6 py-3 rounded-lg text-center">
+          WhatsApp
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
