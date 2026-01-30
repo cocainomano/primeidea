@@ -51,6 +51,11 @@ const {
 	</Row>
 </Section>
 */
+import ChipNotification from '../../ui/ChipNotification.astro'
+import { Image } from 'astro:assets'
+import calendar from  '../../../assets/wihitecal.svg'
+import Highlight from '../../ui/Highlight.astro'
+
 ---
 <section class="bg-slate-950 text-white overflow-hidden">
   <div class="container mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
@@ -58,7 +63,7 @@ const {
     <!-- IMAGEN -->
     <div class="order-1 md:order-2 relative">
       <img 
-        src="/src/assets/morraahorro.jpg" 
+        src="/hero/morraahorro.jpg" 
         alt="Asesoría financiera profesional"
         class="w-full h-64 md:h-[420px] object-cover rounded-2xl shadow-2xl"
       />
@@ -68,23 +73,25 @@ const {
     <!-- TEXTO -->
     <div class="order-2 md:order-1">
       <h1 class="text-3xl md:text-5xl font-extrabold leading-tight text-white">
-        Tu dinero con
-        <span class="block text-white">dirección</span>
+        Plan Vida Mujer
+        <span class="block text-white text-3xl">Fideicomiso exclusivo para mujeres</span>
       </h1>
 
       <p class="mt-5 text-base md:text-lg text-slate-300 max-w-xl">
-        Acompañamiento profesional para tomar decisiones financieras con claridad y estrategia.
+        Un plan diseñado para mujeres que buscan proteger su patrimonio y asegurar su futuro.
       </p>
 
-      <div class="mt-8 flex flex-col sm:flex-row gap-4">
-        <a href="#agenda" class="bg-white hover:bg-fuchsia-700 px-6 py-3 rounded-lg font-semibold text-center">
-          Agenda una cita
-        </a>
-        <a href="#servicios" class="border border-white/30 hover:bg-white/10 px-6 py-3 rounded-lg text-center">
-          WhatsApp
+      <div class="flex-col">
+        <a href="/agendar-cita" target="_blank">
+          <ChipNotification 
+            radius="rounded-full" 
+            classes="!bg-slate-700 hover:!bg-slate-600 !border !border-white/10" >
+            <Image src={calendar} alt="Optimaxx Plus" class="h-12 w-14" slot="button" />
+            <span class="text-white">Agenda para&nbsp;</span>
+            <Highlight classes="md:ml-2">Plan Vida Mujer</Highlight>
+          </ChipNotification>
         </a>
       </div>
     </div>
-
   </div>
 </section>

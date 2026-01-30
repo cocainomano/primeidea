@@ -5,7 +5,7 @@
 
 // Components
 // - Layout
-import Section from '../../ui/Section.astro'
+/*import Section from '../../ui/Section.astro'
 import Row from '../../ui/Row.astro'
 import Col from '../../ui/Col.astro'
 // - UI
@@ -26,8 +26,6 @@ const {
 	bg,
 	bgPosition = 'right'
 } = Astro.props
----
-
 <Section
 	id="testimonial"
 	mode="dark"
@@ -50,3 +48,49 @@ const {
 		</Col>
 	</Row>
 </Section>
+*/
+
+import ChipNotification from '../../ui/ChipNotification.astro'
+import { Image } from 'astro:assets'
+import calendar from  '../../../assets/wihitecal.svg'
+import Highlight from '../../ui/Highlight.astro'
+
+---
+<section class="bg-slate-950 text-white overflow-hidden">
+  <div class="container mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+    
+    <!-- IMAGEN -->
+    <div class="order-1 md:order-2 relative">
+      <img 
+        src="/hero/planheromorra.jpg" 
+        alt="Asesoría financiera profesional"
+        class="w-full h-64 md:h-[420px] object-cover rounded-2xl shadow-2xl"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-slate-950/70 via-slate-950/40 to-transparent rounded-2xl"></div>
+    </div>
+
+    <!-- TEXTO -->
+    <div class="order-2 md:order-1">
+      <h1 class="text-3xl md:text-5xl font-extrabold leading-tight text-white">
+			Construye el futuro que mereces sin dejar de vivir el presente que amas
+		<span class="block text-white text-3xl"></span>
+      </h1>
+
+      <p class="mt-5 text-base md:text-lg text-slate-300 max-w-xl">
+        Un plan de Ahorro Inteligente Personal para el Retiro .
+      </p>
+
+      <div class="flex-col">
+        <a href="/agendar-cita" target="_blank">
+          <ChipNotification 
+            radius="rounded-full" 
+            classes="!bg-slate-700 hover:!bg-slate-600 !border !border-white/10" >
+            <Image src={calendar} alt="Optimaxx Plus" class="h-12 w-14" slot="button" />
+            <span class="text-white">Agenda para&nbsp;</span>
+            <Highlight classes="md:ml-2">Plan Inteligente Personal</Highlight>
+          </ChipNotification>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
