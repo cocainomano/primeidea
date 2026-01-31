@@ -13,59 +13,66 @@ import Card from '../../ui/cards/FeatureCard.astro'
 
 // Content
 // - Cards
-import feature01 from '../../../assets/cards/feature-01.svg'
-import feature02 from '../../../assets/cards/feature-02.svg'
-import feature03 from '../../../assets/cards/feature-03.svg'
-import feature04 from '../../../assets/cards/feature-04.svg'
-import feature05 from '../../../assets/cards/feature-05.svg'
+import feature01 from '../../../assets/hero/planheromorra.jpg'
+import feature02 from '../../../assets/hero/morraahorradorahero.jpg'
+import feature03 from '../../../assets/hero/blindaje.jpg'
+import feature04 from '../../../assets/hero/graduado.jpg'
+import feature05 from '../../../assets/hero/coaching.jpg'
+import morravida from '../../../assets/hero/morraahorro.jpg'
 ---
 
 <Section id="features">
 	<Row>
 		<Col span="12" align="center" classes="mb-12 max-w-4xl mx-auto">
-			<h2 class="text-pretty">Innovative tools to <strong>transform</strong> your workflow</h2>
+			<h2 class="text-pretty">
+				Los productos que dan <strong>tranquilidad</strong> a tu vida y a tu patrimonio
+			</h2>
 			<p class="pb-0 text-lg">
-				Explore the suite of tools designed to streamline your workflow, enhance productivity, and
-				drive growth. Each product is crafted with precision to meet your needs and exceed your
-				expectations.
+				Ofrecemos soluciones de ahorro y protección patrimonial. Te asesoramos para <strong>estructurar opciones financieras</strong> acordes a tus objetivos y a tu situación actual de forma que <strong>no sacrifiques tu estilo de vida actual</strong>.
 			</p>
 		</Col>
 	</Row>
 	<Row>
-		<Col span="4">
+		<Col span="4" classes="flex flex-col gap-6">
 			<Card
-				title="All your data in one place"
-				subtitle="Stay on top of your tasks and deadlines with our intuitive project management tool. Visualize progress, assign tasks, and collaborate seamlessly."
+				title="Plan Personal de Retiro Inteligente"
+				subtitle="Te ofrecemos Planes Personales de Retiro (PPR) de marcas líderes reconocidas como Optimaxx Plus de Allianz y te acompañamos para elegir la opción que mejor se adapta a tus necesidades y estilo de vida."
 				image={feature01}
-				link="/features"
-			/>
-		</Col>
-		<Col span="4" classes="flex flex-col gap-6">
-			<Card
-				title="Organize & manage your projects "
-				subtitle="Stay on top of your tasks and deadlines with our intuitive project management tool. "
-				image={feature02}
-				link="/features"
+				link="/plan-personal-de-retiro"
 			/>
 			<Card
-				title="Keep your team connected"
-				subtitle="With our integrated chat platform share updates, files, and messages in a secure and user-friendly environment."
+				title="Blindaje Empresarial"
+				subtitle="Protege tu patrimonio con estrategias empresariales. Un plan que reduce riesgos y maximiza beneficios para tu empresa. Si eres Empresario o ejecutivo exitoso que busca proteger sus logros, este plan es para ti."
 				image={feature03}
-				link="/features"
+				link="/blindaje-empresarial"
 			/>
 		</Col>
 		<Col span="4" classes="flex flex-col gap-6">
 			<Card
-				title="Manage your customers"
-				subtitle="Build and nurture customer relationships with our powerful CRM system. "
-				image={feature04}
-				link="/features"
+				title="Fondo de Ahorro Inteligente"
+				subtitle="Tenemos un fondo de ahorro inteligente para ti. Un plan para cumplir objetivos grandes, con opciones de protección. Cuando el ahorro tiene un propósito, toma un sentido real."
+				image={feature02}
+				link="/fondo-de-ahorro-inteligente"
 			/>
 			<Card
-				title="Simplify your financial operations"
-				subtitle="Streamline your billing process with our easy-to-use invoicing tool. Create, send, and track invoices effortlessly."
+				title="Plan Vida Mujer"
+				subtitle="Fideicomiso exclusivo para mujeres que buscan proteger su patrimonio y asegurar su futuro. Se trata de un plan integral que da apoyo en los aspectos más relevantes: su salud, su tranquilidad y su porvenir."
+				image={morravida}
+				link="/vida-mujer"
+			/>
+		</Col>
+		<Col span="4" classes="flex flex-col gap-6">
+			<Card
+				title="Fideicomiso Educativo"
+				subtitle="Un plan que combina tu ahorro + tu tranquilidad y se traduce en la educación de tus hijos con doble protección. Hay decisiones que no se sienten como finanzas. Se sienten como amor ❤️"
+				image={feature04}
+				link="/fideicomiso-educativo"
+			/>
+			<Card
+				title="Coaching Financiero"
+				subtitle="Coaching financiero impartido por Mariana Carballo, especialista en finanzas. Economista con maestría en finanzas, egresada del ITESM, con más de 10 años de experiencia en el sector financiero"
 				image={feature05}
-				link="/features"
+				link="/coaching-financiero"
 			/>
 		</Col>
 	</Row>
