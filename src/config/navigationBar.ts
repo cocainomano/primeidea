@@ -33,9 +33,9 @@ export interface NavData {
 
 export const navigationBarData: NavData = {
 	logo: {
-		src: '/logo.svg',
+		src: '/primeLogo.png',
 		alt: 'Prime Idea Asesores',
-		text: 'Prime Idea Asesores'
+		text: ''
 	},
 	navItems: [
 		{ name: 'Home', link: '/' },

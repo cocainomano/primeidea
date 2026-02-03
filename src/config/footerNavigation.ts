@@ -43,9 +43,9 @@ export const footerNavigationData: FooterData = {
 		aboutText:
 			'En Prime Idea Asesores, tenemos los mejores productos para tu retiro, educación de tus hijos, ahorro y salud. Te ayudamos a elegir lo que mejor se adapta a tu vida y a tu situación actual de forma que no sacrifiques tu estilo de vida actual.',
 		logo: {
-			src: '/logo.svg',
-			alt: 'The tailwind astro theme',
-			text: 'Prime Idea Asesores'
+			src: '/primeLogo.png',
+			alt: 'Prime Idea Asesores',
+			text: ''
 		},
 		address: 'Calle 123, Col. Centro, C.P. 12345, Ciudad de México, México',
 		conduseflogo: {
