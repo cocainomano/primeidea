@@ -1,0 +1,61 @@
+---
+import Card     from '@/components/ui/cards/FeatureCard.astro'
+import Button   from '@/components/ui/Button.astro'
+import Col      from '@/components/ui/Col.astro'
+import { Icon } from 'astro-icon/components'
+// - IMAGENES ALV
+import imgProfesionista  from '@/assets/ppr/logiempleado.jpg'
+import imgEmprendedores  from '@/assets/ppr/logiemprendedor.jpg'
+import imgDueñosNegocios from '@/assets/ppr/logipyme.jpg'
+---
+<section>
+  <div class="container mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="border rounded-md flex items-center justify-center text-sm text-slate-400">
+        <Col span="4" classes="flex flex-col gap-4">
+          <Card
+           title    ="Plan de Retiro Para Profesionistas"
+           subtitle ="Estabilidad + beneficios fiscales óptimos y sin grandes sacrificios."
+           image    ={imgProfesionista}
+          />
+          <Button link="/agenda-tu-cita" style="primary" classes="w-full sm:w-auto h-auto py-3">
+            <Icon name="clipboard-document-list" class="size-8" />
+            <span class="text-center">
+              Agenda una sesión sin compromiso <br> para tu plan como Profesionista
+            </span>
+          </Button>
+        </Col>
+      </div>
+      <div class="border rounded-md flex items-center justify-center text-sm text-slate-400">
+        <Col span="4" classes="flex flex-col gap-4">
+          <Card
+           title    ="Plan de Retiro Para Emprendedores"
+           subtitle ="Flexibilidad y protección ante ingresos variables y asesoría personalizada para el mejor plan de retiro personal."
+           image    ={imgEmprendedores}
+          />
+          <Button link="/agenda-tu-cita" style="primary" classes="w-full sm:w-auto h-auto py-3">
+            <Icon name="clipboard-document-list" class="size-8" />
+            <span class="text-center">
+              Sesión Exclusiva Emprendedores<br> agenda sin compromiso
+            </span>
+          </Button>
+        </Col>
+      </div>
+      <div class="border rounded-md flex items-center justify-center text-sm text-slate-400">
+        <Col span="4" classes="flex flex-col gap-4">
+          <Card
+          title="Plan de Retiro Para Dueños de Negocios"
+          subtitle="Protección y máximo provecho fiscal y legal, te asesoramos a construir tu futuro sin sacrificios"
+          image={imgDueñosNegocios}
+          />
+          <Button link="/agenda-tu-cita" style="primary" classes="w-full sm:w-auto h-auto py-3">
+            <Icon name="clipboard-document-list" class="size-8" />
+            <span class="text-center">
+            Sesión Negocios y PyMEs<br> para ti que eres dueño de negocio
+            </span>
+          </Button>
+        </Col>
+      </div>
+    </div>
+  </div>
+</section>
