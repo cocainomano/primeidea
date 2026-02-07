@@ -6,3 +6,4 @@
 export const googleSiteVerification = ''
 export const googleAnalyticsMeasurementID = import.meta.env.PUBLIC_GA_TRACKING_ID // Replace with your Google Analytics Measurement ID (e.g. "G-XXXXXXXXXX")
 export const googleTagManagerID = ''
+export const metaPixelID = '1596957225766895'
