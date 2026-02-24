@@ -77,7 +77,7 @@ export const footerNavigationData: FooterData = {
 					subCategoryLink: '/fondo-de-ahorro-inteligente'
 				},
 				{
-					subCategory: 'Fideicomiso Educativo',
+					subCategory: 'Plan Educativo',
 					subCategoryLink: '/fideicomiso-educativo'
 				},
 				{
